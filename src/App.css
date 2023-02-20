@@ -1,38 +1,284 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  overflow: hidden;
+  background-color: rgb(255, 179, 0);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  width: 80%;
+  margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  font-size: 25px;
+
+  width: 30%;
+  float: left;
+  display: block;
+  margin: 10px 0;
+  color: white;
+}
+
+ul {
+  float: right;
+  padding: 0;
+
+}
+
+ul a {
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+}
+
+
+.active {
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgb(222, 194, 183);
+}
+
+
+
+
+/* /////////////////////////////////////////////////////////////////////////// */
+
+aside {
+  width: 21%;
+  background-color: #f8f8f8;
+  padding: 10px;
+}
+
+aside p {
+  padding: 0;
+  margin: 0;
+}
+
+.div-color1,
+.div-color2,
+.div-color3 {
+  width: 40px;
+  height: 40px;
+  margin: 2px;
+  border-radius: 2px;
+}
+
+.div-color1 {
+  background-color: #C7511F;
+}
+
+.div-color2 {
+  background-color: rgb(117, 64, 179);
+}
+
+.div-color3 {
+  background-color: rgb(60, 118, 98);
+}
+
+
+.links-aside {
+  text-decoration: none;
+  color: #0F1111;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.links-aside:hover {
+
+  color: #C7511F;
+  text-decoration: none;
+}
+
+aside li {
+  margin-right: 30px;
+  list-style: none;
+  font-size: 15px;
+
+}
+
+.input-check {
+  width: 16px;
+  height: 16px;
+  box-shadow: 0px 0px 3px 0.2px #a1b5b5;
+  ;
+}
+
+.input-check:checked {
+  background-color: #C7511F;
+  color: #C7511F;
+
+}
+
+.input-text {
+  width: 70px;
+  margin: 2px;
+  border: 1px solid rgb(162, 151, 151);
+  border-radius: 5px;
+  text-indent: 5px;
+}
+
+.input-text:focus-visible {
+  outline: rgb(34, 34, 241);
+  box-shadow: 0px 0px 10px 1px rgb(158, 158, 252);
+}
+
+.button-go {
+  width: 40px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid rgb(194, 197, 200);
+  border-radius: 10px;
+  background-color: white;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0.2px #a1b5b5;
+}
+
+.image-star {
+  width: 20px;
+
+}
+
+
+/* ****************************** */
+
+section {
+  width: 78%;
+  background-color: #f8f8f8;
+  /* background-color: rgb(184, 184, 207); */
+}
+
+.contentProduct {
+  width: 24%;
+  height: 550px;
+  color: #0F1111;
+  text-decoration: none;
+  background-color: white;
+  border-radius: 5px;
+  /* background-color: rgb(15, 15, 104); */
+
+}
+
+.contentProduct:hover {
+  color: #C7511F;
+}
+
+.div-image-products {
+  width: 100%;
+  height: 370px;
+  /* background-color: red; */
+}
+
+.image-products {
+  width: 230px;
+}
+
+.div-p {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  /* background-color: aquamarine; */
+}
+
+.P_title {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+
+/******************************************************************** page product ****************************************************/
+
+.div-image {
+
+  width: 40%;
+  height: 610px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.div-image img {
+  width: 95%;
+  height: 600px;
+}
+
+.div-center {
+  width: 38%;
+  /* background-color: #c1a598; */
+  height: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.div-title {
+  height: 32%;
+
+}
+
+.div-price {
+
+  height: 25%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.div-price h5 {
+  padding: 20px;
+}
+
+.div-description {
+  margin-top: 20px;
+  height: 40%;
+
+}
+
+.aside-pageproduct {
+  width: 18%;
+  /* background-color: #C7511F; */
+  height: 700px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.div-price2 {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+}
+
+.div-title2 {
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.aside-pageproduct h4 {
+  color: darkgreen;
+  margin-bottom: 20px;
+}
+
+.aside-pageproduct select {
+  padding: 2px;
+  border-radius: 10px;
+  width: 60px;
+}
+
+.ddd {
+  padding: 10px;
+  text-align: center;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #e1eb20;
+  margin-top: 30px;
+}
+
+.bbb {
+  padding: 10px;
+  text-align: center;
+  width: 95%;
+  border-radius: 20px;
+  background-color: #f39822;
+  margin-top: 20px;
 }

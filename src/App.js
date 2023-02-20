@@ -1,25 +1,38 @@
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import './App.css';
+import HomePage from './veiw/pages/HomePage';
+import ProductPage from './veiw/pages/product';
+import ShopPage from './veiw/pages/shopPage';
+ export default function App(){
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+return(<>
+  <Router>
+    <Routes>
+      <Route path='/' element={<HomePage />} >  </Route>
+      <Route path='/shop' element={<ShopPage />} >  </Route>
+      <Route path='/shop/product:id' element={<ProductPage />} > </Route>
+    </Routes>
+  </Router>
+</>);
 }
 
-export default App;
+
+
+// import axios from "axios";
+// const Api = axios.create({ baseURL: 'https://api.storerestapi.com/' });
+//  export default class App extends Component {
+  // constructor() {
+  //   super();
+  //   Api.get('products').then(res => {
+  //       console.log(res.data)
+  //     });
+  
+  // };
+
+//   render() {
+//     return (
+//      <></>
+//     );
+//   }
+// }
